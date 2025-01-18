@@ -1,0 +1,16 @@
+import numpy  as np
+
+A = np.array([[1,2],[5,6]])
+B = np.array([[1,2],[5,6]])
+
+add = A+B 
+print("ADDITION: \n", add)
+
+sub = A-B 
+print("SUBTRACTION: \n", sub)
+
+mul = np.dot(A,B)
+print("MULTIPLICATION: \n", mul)
+
+div = A/B 
+print("DIVISION: \n", div)
