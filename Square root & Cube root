@@ -1,0 +1,25 @@
+import java.lang.Math;
+import java.util.*;
+class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+      System.out.println("Enter the number for square root: ");
+      int x = sc.nextInt ();
+      System.out.println ("The square root of " + x + " is : " + SquareRoot (x));
+      System.out.println("\n \nEnter the number for cube root: ");
+      int y = sc.nextInt ();
+      System.out.println ("The cube root of " + y + " is : " + CubeRoot (y));
+  }
+  static double SquareRoot(int x)
+  {
+   double sq = Math.sqrt(x);
+    return sq;
+  }
+    static double CubeRoot(int x)
+  {
+   double cb = Math.cbrt(x);
+    return cb;
+  }
+}
