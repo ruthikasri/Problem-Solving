@@ -1,0 +1,22 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the initial value: ");
+        int ini = sc.nextInt();
+        System.out.print("Enter the final value: ");
+        int fin = sc.nextInt();
+
+        for (int i = ini; ini <= fin; i++) {
+             System.out.println(i);
+             
+             if(i%13==0){
+                 break;
+             }
+        }
+    }
+}
+
