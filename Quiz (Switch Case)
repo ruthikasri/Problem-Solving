@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("which is the National Animal of India? \n option1: Tiger \n option2: Lion \n option3: Zebra \n option4: Deer \n option5: None of these\n");
+        System.out.print("Enter the  option: ");
+        int n = sc.nextInt();
+        
+        switch (n)
+        {
+        case 1:
+            System.out.println("correct");
+            break;
+        case 2:
+            System.out.println("wrong");
+            break;
+        case 3:
+            System.out.println("wrong");
+            break;
+        case 4:
+            System.out.println("wrong");
+            break;
+        default:
+            System.out.println("none of the above");     
+        }     
+    }
+}
+
