@@ -1,0 +1,7 @@
+li=[1,2,3,7,45,78,899]
+n= len(li)
+h=0
+for i in range(n):
+    if h<li[i]:
+        h=li[i]
+print(h)
