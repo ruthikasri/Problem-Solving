@@ -1,0 +1,15 @@
+a= int(input("Enter 1st number: "))
+b= int(input("Enter 2st number: "))
+if a<b:
+    print(a,"<",b, "is true")
+    print(a,">",b, "is false")
+    
+if a<=b:
+    print(a,"<=",b, "is true")
+    print(a,">=",b, "is false")
+    
+if a==b:
+    print(a,"==",b, "is false")
+if a!=b:
+    print(a,"!=",b, "is true")
+
