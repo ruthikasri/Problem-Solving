@@ -6,6 +6,6 @@ elif (wei>2001 and wei<4000):
 elif (wei>4001 and wei<7000):
     print("0 minutes")
 elif(wei> 7000):
-    print("Exceeds maximum limit")
+    print("Overloaded")
 else:
     print("Invalid Syntax")
