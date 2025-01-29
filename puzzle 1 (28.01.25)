@@ -1,0 +1,11 @@
+wei = int(input("Enter the weight given: "))
+if (wei>0 and wei <= 2000):
+    print("25 minutes")
+elif (wei>2001 and wei<4000):
+    print("35 minutes")
+elif (wei>4001 and wei<7000):
+    print("0 minutes")
+elif(wei> 7000):
+    print("Exceeds maximum limit")
+else:
+    print("Invalid Syntax")
