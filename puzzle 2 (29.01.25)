@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String args[]){
+        
+        Scanner sc = new Scanner( System.in);
+        
+        System.out.print("enter a no: ");
+        int num1 = sc.nextInt();
+        System.out.print("enter a no: ");
+        int num2 = sc.nextInt();
+        
+       int add = num1+num2;
+       System.out.println("Addition: "+add);
+       
+       int sub = num1-num2;
+       System.out.println("Subtraction: "+sub);  //original value
+       System.out.println("Subtraction in absolute value: "+Math.abs(sub));  //original value
+          
+    }
+}
