@@ -1,0 +1,63 @@
+package project;
+
+import java.util.Scanner;
+
+public class calculator {
+	public static void main(String args[]) {
+		
+		Scanner sc = new Scanner(System.in);
+		char choice;
+		
+		do {
+		System.out.println("******************************CALCULATOR*************************************");
+		System.out.println(" 1. ADDITION \n 2. SUBTRACTION \n 3. MULTIPLICATION \n 4. DIVISION \n 5. EXIT");
+		System.out.println("-------------------------------------------------------------------");
+		System.out.println("Enter your option: ");
+		int o = sc.nextInt();
+		if (o == 5) {
+			System.out.println("Good Byeee!!!!!!!!!!");
+			break;
+		}
+		System.out.println("-------------------------------------------------------------------");
+		System.out.print("Enter a value: ");
+		int a = sc.nextInt();
+		System.out.print("Enter b value: ");
+		int b = sc.nextInt();
+		System.out.println("-------------------------------------------------------------------");
+		
+		switch(o)	{
+		case 1:
+			System.out.println(a+b);
+			break;
+			
+		case 2:
+			System.out.println(a-b);
+			break;
+			
+		case 3:
+			System.out.println(a*b);
+			break;
+			
+		case 4:
+			if(a/b == 0) {
+				System.out.println(a/b);}
+			else {
+				System.out.println("Zero division error");
+			}
+			break;
+		case 5:
+			System.out.println("Invalid Calculation.");
+			break;
+		}
+		
+		System.out.println("Do you want to perrform anyother calculations (y/n): ");
+		choice = sc.next().charAt(0);
+		
+		}
+		while (choice == 'y' || choice == 'n');
+		
+		}		
+		
+	}
+		
+	
