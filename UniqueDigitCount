@@ -1,0 +1,25 @@
+import java.io.Scanner;
+imoprt java.util.Scanner;
+public class Main{
+public int uniqueDigitCount(int input){
+
+Scanner sc = new Scanner(System.in);
+int input = sc.nextInt();
+
+boolean[] digits = new boolean[10];
+
+int uniquecount = 0;
+
+while(input>0){
+int digit = input % 10;
+if(!digits[digit]){
+uniquecount++;
+digits[digit] = true;
+}
+input /= 10;
+}
+return uniquecount;
+}
+}
+
+
